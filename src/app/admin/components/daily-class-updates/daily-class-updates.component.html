@@ -1,0 +1,64 @@
+<div class="container">
+    <div>
+        <div >
+            <mat-card class="p-5 daily-class-update">
+            <div>
+                <h1>Daily Class Updates</h1>
+            </div>
+            <div class="">
+                
+                   
+                 
+                  
+                <div class="d-flex align-items-center justify-content-center gap-5 my-5 daily-update">
+                    <mat-card class="p-5" style="height: 250px;">
+                 <div class="">
+                    <div class="py-4">
+                        <h2>Select A Batch</h2>
+                        <mat-form-field>
+                      
+                            <mat-label>Choose batch</mat-label>
+                            <mat-select >
+
+                              <mat-option value="{{data.class_name}}" *ngFor="let data of class_details" (click)="getval(data)">
+                                {{data.class_name}}
+                            </mat-option>
+                            
+                            </mat-select>
+                          </mat-form-field>
+                    </div>
+                  
+                 </div>
+                   
+                </mat-card>
+                <mat-card class="p-4"  style="height: 250px;">
+                    <div class="">
+                       <div class="py-5">
+                        <h1>Enter Sheet</h1>
+                           <div>
+                            <div>
+                               
+                            </div>
+                            <input type="file" (change)="onFileSelected($event)">
+                        </div>
+                       </div>
+                     
+                    </div>
+                      
+                   </mat-card>
+                   
+               
+                </div>
+               
+                <div>
+                    <div class="text-center">
+                        <button mat-raised-button color="warn" class="p-4"  (click)="uploadData()">Upload</button>
+                       </div>
+                </div>
+            </div>
+           
+            
+        </mat-card>
+        </div>
+    </div>
+</div>

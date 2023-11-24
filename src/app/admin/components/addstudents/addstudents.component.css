@@ -1,0 +1,23 @@
+.example-form {
+   
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+ 
+  .addstudents{
+padding: 15px;
+   margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .addstudents form{
+    width: 100%;
+  
+    
+  }

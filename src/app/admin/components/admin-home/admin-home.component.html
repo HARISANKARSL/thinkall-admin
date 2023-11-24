@@ -1,0 +1,58 @@
+  
+<div class="container">
+
+<div class="logo text-center">
+   <img src="./assets/images/sap.png" alt=""> 
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-3 py-3" *ngFor="let items of item">
+      <div class="card-sec mx-5">
+        <mat-card class="example-card " routerLink="{{items.route}}">
+        
+            <img mat-card-image src="{{items.img}}" alt="">
+           
+          
+          </mat-card>
+          <div class="p-2">
+            <p>{{items.title}}</p>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-3 py-3" >
+      <div class="card-sec mx-5">
+        <mat-card class="example-card " >
+          <a href="https://forms.gle/Di8RJ9QzMKge4uy98">
+            <img mat-card-image src="./assets/images/add exam.png" alt="" >
+          </a>
+          
+          </mat-card>
+          <div class="p-2">
+            <p>Add Exam</p>
+          </div>
+      </div>
+      
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3 py-3" >
+      <div class="card-sec mx-5">
+        <mat-card class="example-card " >
+        <a href="https://forms.gle/KuVV86qQq8c195yK6">
+          <img mat-card-image src="./assets/images/stdymtrl.png" alt="" >
+        </a>
+         
+           
+          
+          </mat-card>
+          <div class="p-2">
+            <p>Add Material</p>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>

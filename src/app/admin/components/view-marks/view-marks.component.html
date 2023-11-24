@@ -1,0 +1,43 @@
+<div class="container">
+    <mat-card>
+        <mat-card-content>
+   <div>
+    <h2>Exam Result</h2>
+   </div>
+   <mat-form-field>
+          
+    <mat-label>Select Subject</mat-label>
+    <mat-select  >
+
+        
+      <mat-option *ngFor="let items of subjects" value="{{items}}" (click)="getMarks(items)" >
+         {{items}}
+    </mat-option >
+  
+    </mat-select>
+  </mat-form-field>
+            <table class="table">
+                   
+                <thead>
+                  <tr>
+                 
+                    <th scope="col">Exam name</th>
+                    <th scope="col">Marks</th>
+                 
+                  </tr>
+                </thead>
+                <tbody *ngFor="let item of get_data">
+                  <tr>
+                   
+                    <td>{{item.exam_name}}</td>
+                    <td>{{item.marks}}</td>
+                    
+                  </tr>
+             
+                </tbody>
+              </table>
+
+        </mat-card-content>
+      </mat-card>
+   
+</div>

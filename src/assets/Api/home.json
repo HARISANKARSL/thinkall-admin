@@ -1,0 +1,83 @@
+{
+    "homesec":[
+        {
+
+        "img":"./assets/images/batch.png",
+        "title":"Batch",
+        "route":"/admin/batch"
+     },
+     {
+   
+        "img":"./assets/images/dailyclass.png",
+        "title":"Daily Class",
+        "route":"/admin/daily-class-updates"
+       
+     },
+     {
+        
+        "img":"./assets/images/examresults.png",
+        "title":"Exam Results",
+        "route":"/admin/examresult"
+     },
+     {
+    
+        "img":"./assets/images/attendance.png",
+        "title":"Attendance",
+        "route":"/admin/add-attendance"
+     },
+     
+     {
+ 
+        "img":"./assets/images/leadrboard.png",
+        "title":"Leaderboard",
+        "route":"/admin/leaderboard"
+     },
+     {
+       
+        "img":"./assets/images/addstudent.png",
+        "title":"Add Student",
+        "route":"/admin/addstudents"
+     },
+     {
+     
+        "img":"./assets/images/helpcenter.png",
+        "title":"Help Center",
+        "route":"/admin/help-center"
+     }
+],
+"report":[
+   {
+
+   
+
+      "img":"./assets/images/attendance.png",
+      "title":"Attendance",
+     "route":"/admin/viewAttendnace"
+
+},
+{
+
+
+   "img":"./assets/images/marklist.png",
+   "title":"Mark Lists",
+   "route":"/admin/viewMarks"
+
+},
+{
+
+  
+   "img":"./assets/images/dailyclass.png",
+   "title":"Daily Class Details",
+   "route":"/admin/viewstudentDailyUpdates"
+  
+},
+{
+
+
+   "img":"./assets/images/graph.png",
+   "title":"Graphs"
+  
+}
+
+]
+}

@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="py-3">
+        <h1 class="text-center">Help centre / Settings</h1>
+
+     
+        <div>
+            <form [formGroup]="form" action="javascript:void(0)" (submit)="sendEmail()">
+            <div class="form-group">
+                <h3 for="exampleFormControlTextarea3"><b>Write to Us</b></h3>
+                <textarea class="form-control py-5" id="exampleFormControlTextarea3" formControlName="subject" placeholder="Type here.........." rows="10"></textarea>
+                <div class="text-end p-2">
+  
+                    <button mat-raised-button color="warn" class="p-3">Submit </button>
+                  </div>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>

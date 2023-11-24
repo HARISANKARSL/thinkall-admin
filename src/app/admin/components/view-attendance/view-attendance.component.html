@@ -1,0 +1,84 @@
+<div class="container">
+    <mat-card class="p-2">
+        <div>
+            <h2>Select Batch</h2>
+            <mat-form-field>
+          
+              <mat-label>Select A Date</mat-label>
+              <mat-select  >
+
+                  
+                <mat-option *ngFor="let date of Date_date" value="{{date}}" (click)="date_date(date)"  >
+                   {{date}}
+              </mat-option >
+            
+              </mat-select>
+            </mat-form-field>
+         </div>
+         <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <table class="table">
+              <thead>
+                <tr>
+                 
+                  <th scope="col">Present Date</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr  *ngFor="let presentData of presentDays" >
+                  
+                  <td>
+    <p>
+      {{presentData.year}}  {{presentData.month}} {{presentData.day}} 
+    </p>
+  
+  
+                  </td>
+                  
+                </tr>
+                
+                  
+               
+               
+              </tbody>
+            </table>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <table class="table">
+              <thead>
+                <tr>
+                 
+                  <th scope="col">Absent Date</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr  *ngFor="let absentData of absentDays" >
+                  
+                  <td>
+    <p>
+      {{absentData.year}}  {{absentData.month}} {{absentData.day}} 
+    </p>
+  
+  
+                  </td>
+                 
+                </tr>
+                
+                  
+               
+               
+              </tbody>
+            </table>
+          </div>
+         </div>
+        
+       
+      </mat-card>
+
+
+    
+      
+    
+</div>

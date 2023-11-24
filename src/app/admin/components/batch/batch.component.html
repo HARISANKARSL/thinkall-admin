@@ -1,0 +1,90 @@
+
+
+           
+ 
+       
+       
+      
+        
+    
+
+
+
+            <div class="container py-5" >
+                <div class="d-flex align-items-center justify-content-between mx-5 ">
+                    <div class="m-0">
+                        <h1 class="m-0">Batch</h1>
+                    </div>
+                    <div class="createbatch me-5 pe-5" *ngIf="show">
+                        <button mat-raised-button  color="warn" (click)="openDialog()"><span>Create A Batch </span><mat-icon>library_add</mat-icon></button>
+                    </div>
+
+                </div>
+                <div class="row py-5">
+                   
+                  
+                    <div class="col-sm-12 col-md-3 p-3" *ngFor="let items of batch">
+                       <div class="batch mx-5">
+                       
+                        <mat-card >
+                            <mat-card-content class="text-center " (click)="getById(items.class_name)">
+                             <h2 class="text-white">{{items.class_name}} {{items.division}}</h2>
+                            </mat-card-content>
+                         <div class="d-flex gap-3 my-3">
+                            <div>
+                                <button  mat-raised-button  (click)="update(items.id)"><mat-icon>create</mat-icon></button>
+                            </div>
+                            <div>
+                                <button  mat-raised-button    data-bs-toggle="modal" data-bs-target="#staticBackdrop">   <mat-icon >delete</mat-icon></button>
+                            </div>
+                         </div>
+                         
+                        
+                          </mat-card>
+                        <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade deletebatchModel" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="text-end p-2">
+            <mat-icon data-bs-dismiss="modal">clear</mat-icon>
+        </div>
+        <div class="modal-body text-center">
+         <h3>  Are you sure you want to delete the bathch <b >{{items.class_name}} {{items.division}} </b>?</h3>
+          </div>
+        
+        <div class="text-end p-3">
+          <button type="button" class="btn btn-secondary mx-2" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary mx-2" (click)="deleteBatch(items.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                       </div>
+                       
+                    </div>
+                </div>
+                <div>
+                    <div class="text-center" *ngIf="!show">
+                        <div>
+                            <div>
+                                <p>Click  below to ceate your first batch </p>
+                            </div>
+                            <div class="">
+                                <button mat-raised-button  color="warn" (click)="openDialog()"><span>Create A Batch </span><mat-icon>library_add</mat-icon></button>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    </div>
+                   
+             
+                <div>
+                   
+                </div>
+                      
+                </div>
+         
+

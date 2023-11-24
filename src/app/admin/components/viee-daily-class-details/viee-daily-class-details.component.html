@@ -1,0 +1,54 @@
+<div class="container">
+    <mat-card class="p-5">
+      <div>
+        <h2>Student   Daily Class Information</h2>
+      </div>
+        <div>
+            
+            <mat-form-field>
+          
+                <mat-label>Select a Date</mat-label>
+                <mat-select  >
+
+                    
+                  <mat-option *ngFor="let date of Date_date.dates" value="{{date}}" (click)="date_date(date)" >
+                     {{date}}
+                </mat-option >
+              
+                </mat-select>
+              </mat-form-field>
+         </div>
+        <mat-card-content *ngFor="let item of studentsActivities">
+
+<div class="p-3 student-info">
+  <ul >
+    <li><strong>Admission Number:</strong> {{item.admission_no}}</li>
+    <li><strong>Date:</strong> {{item.date}}</li>
+    <li><strong>On Time:</strong> {{item.on_time}}</li>
+    <li><strong>Voice:</strong> {{item.voice}}</li>
+    <li><strong>Number of Subjects:</strong> {{item.nb_sub}}</li>
+    <li><strong>Mobile Network:</strong> {{item.mob_net}}</li>
+    <li><strong>Camera:</strong> {{item.camera}}</li>
+    <li><strong>Full Class:</strong> {{item.full_class}}</li>
+    <li><strong>Activities:</strong> {{item.activities}}</li>
+    <li><strong>Engagement:</strong> {{item.engagement}}</li>
+    <li><strong>Overall Performance Percentage:</strong> {{item.overall_performance_percentage}}</li>
+    <li><strong>Overall Performance:</strong> {{item.overall_performance}}</li>
+    <li><strong>Remarks:</strong>{{item.remarks}} </li>
+</ul>
+
+</div>
+    
+    
+      
+           
+             
+        </mat-card-content>
+      </mat-card>
+
+
+    
+      
+    
+</div>
+
